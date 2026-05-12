@@ -8,7 +8,7 @@
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: beige;">
     <div class="container">
         <div class="row">
             <h1 class="DOM_Header"><strong>DOM and events</strong></h1>
@@ -28,6 +28,31 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum placeat necessitatibus, aspernatur asperiores iure cumque quaerat recusandae aliquid modi. Deserunt, illum cupiditate eos quaerat maiores reprehenderit corporis tenetur velit unde.
             </p>
+         </div>
+         <hr>
+           <div class="row">
+              <h1 class="text-primary">Secret message receiver</h1>
+              <br>
+              <h1>Welcome student</h1>
+              <p>Click a button to reveal a message.</p>
+              <div class="row">
+                    <button onclick="document.getElementsByTagName('p')[0].innerHTML = '<h2>Javascript is powerful</h2>'">Innerhtml</button>
+              </div>
+              <br>
+
+              <div class="row">
+                   <button onclick="document.getElementsByTagName('p')[1].innerHTML='<h3><strong>Am a student</strong></h3>'">Inner.text</button>
+              </div>
+              <br>
+
+              <div class="row">
+                    <button onclick="new_plaintext()">Textcontent</button>
+              </div>
+              <br>
+              <div class="row">
+                <button onclick="change-color">New plaintext</button>
+              </div>
+
          </div>
          <script src="assets/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
