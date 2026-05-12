@@ -16,3 +16,10 @@ function new_plaintext(){
 function new_plaintext2(){
     document.getElementsByClassName("change-color")[0].style.color ="red"
 }
+//function to display enter
+
+function showvalue(){
+    let name=document.getElementById("username").value;
+    
+    alert(name)
+}
